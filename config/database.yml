@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: render-google-maps_production
   username: render-google-maps
   password: <%= ENV['RENDER-GOOGLE-MAPS_DATABASE_PASSWORD'] %>
