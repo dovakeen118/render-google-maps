@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   get "/map", to: "homes#index"
+  get "/simple-map", to: "homes#index"
 
   resources :cats
 end
