@@ -4,7 +4,9 @@ import { Loader } from "@googlemaps/js-api-loader"
 import MapSearch from "./MapSearch"
 import ResultList from "./ResultList"
 
-const GoogleMap = (props) => {
+const JsApiLoaderGoogleMap = (props) => {
+  // may need to comment out script in views/layout/application.html
+
   const [searchQuery, setSearchQuery] = useState("")
   const [searchResults, setSearchResults] = useState([])
   const [error, setError] = useState("")
@@ -71,6 +73,7 @@ const GoogleMap = (props) => {
 
   return (
     <>
+      <h1>JS API Loader Google Maps</h1>
       <MapSearch setSearchQuery={setSearchQuery} />
       <p className="error">{error}</p>
       <div id="map" style={{height:400}}></div>
@@ -79,4 +82,4 @@ const GoogleMap = (props) => {
   )
 }
 
-export default GoogleMap
+export default JsApiLoaderGoogleMap
