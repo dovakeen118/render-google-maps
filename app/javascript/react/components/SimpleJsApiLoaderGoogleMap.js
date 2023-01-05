@@ -13,20 +13,19 @@ const SimpleJsApiLoaderGoogleMap = (props) => {
   loader.load().then(() => {
     const boston = { lat: 42.361, lng: -71.057 };
     
-    
     const map = new google.maps.Map(document.getElementById("map"), {
       center: boston,
       zoom: 11,
     });
     
-    // single marker
- 
+    // 1. Single marker
     new google.maps.Marker({
       position: boston,
       map: map,
     });
 
-    // multiple markers based on request query
+
+    // 2. Multiple markers based on request query
 
     // const request = {
     //   query: "tatte",
@@ -52,6 +51,11 @@ const SimpleJsApiLoaderGoogleMap = (props) => {
   return (
     <>
       <h1>Simple JS API Loader Google Maps</h1>
+      <ul>
+        <li>Should comment out script in application.html.erb which declares Google Maps loader for other maps</li>
+        <li>Displaying a single marker for Boston</li>
+        <li>Component has logic for displaying multiple markers base on a request query</li>
+      </ul>
       <div id="map" style={{height:400}}></div>
     </>
   )

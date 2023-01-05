@@ -20,6 +20,11 @@ const ReactGoogleMap = (props) => {
   return (
     <>
       <h1>React Google Maps</h1>
+      <ul>
+        <li>Should comment out script in application.html.erb which declares Google Maps loader for other maps</li>
+        <li>Displaying a single marker for Boston</li>
+        <li>May not recommend compared to other implementations, not as elegant</li>
+      </ul>
       <MapWithAMarker
         googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBraMYwUbKzwtWbXX2s4r4ENgPHJ32f28o&v=3.exp&libraries=geometry,drawing,places"
         loadingElement={<div style={{ height: "90%" }} />}

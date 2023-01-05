@@ -4,7 +4,7 @@ import { Loader } from "@googlemaps/js-api-loader"
 import MapSearch from "./MapSearch"
 import ResultList from "./ResultList"
 
-const JsApiLoaderGoogleMap = (props) => {
+const AdvancedJsApiLoaderGoogleMap = (props) => {
   // may need to comment out script in views/layout/application.html
 
   const [searchQuery, setSearchQuery] = useState("")
@@ -73,7 +73,12 @@ const JsApiLoaderGoogleMap = (props) => {
 
   return (
     <>
-      <h1>JS API Loader Google Maps</h1>
+      <h1>Advanced JS API Loader Google Maps</h1>
+      <ul>
+        <li>Should comment out script in application.html.erb which declares Google Maps loader for other maps</li>
+        <li>Displaying a map around Boston, ready to search based on user request in the search bar</li>
+        <li>Will display list of found results, multiple map markers, and map markers are clickable for more info</li>
+      </ul>
       <MapSearch setSearchQuery={setSearchQuery} />
       <p className="error">{error}</p>
       <div id="map" style={{height:400}}></div>
@@ -82,4 +87,4 @@ const JsApiLoaderGoogleMap = (props) => {
   )
 }
 
-export default JsApiLoaderGoogleMap
+export default AdvancedJsApiLoaderGoogleMap

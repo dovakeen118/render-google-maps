@@ -24,6 +24,10 @@ const VanillaGoogleMap = (props) => {
   return (
     <>
       <h1>Vanilla Google Maps</h1>
+      <ul>
+        <li>Requires the script in application.html.erb which designates the API key</li>
+        <li>Displaying a marker for the coordinates of Boston</li>
+      </ul>
       <div id="map" style={{height:400}}></div>
     </>
   )
