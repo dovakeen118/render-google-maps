@@ -6,6 +6,7 @@ import AdvancedJsApiLoaderGoogleMap from "./AdvancedJsApiLoaderGoogleMap"
 import SimpleJsApiLoaderGoogleMap from "./SimpleJsApiLoaderGoogleMap"
 import ReactGoogleMap from "./ReactGoogleMap"
 import VanillaGoogleMap from "./VanillaGoogleMap"
+// import ReactWrapper from "./ReactWrapper"
 
 export const App = (props) => {
   return (
@@ -16,6 +17,7 @@ export const App = (props) => {
         <Route exact path="/simple-js-loader-map" component={SimpleJsApiLoaderGoogleMap} />
         <Route exact path="/advanced-js-loader-map" component={AdvancedJsApiLoaderGoogleMap} />
         <Route exact path="/react-google-map" component={ReactGoogleMap} />
+        {/* <Route exact path="/react-wrapper" component={ReactWrapper} /> */}
       </Switch>
     </BrowserRouter>
   )

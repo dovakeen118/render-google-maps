@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/simple-js-loader-map", to: "homes#index"
   get "/advanced-js-loader-map", to: "homes#index"
   get "/react-google-map", to: "homes#index"
+  get "/react-wrapper", to: "homes#index"
 
   resources :cats
 end
